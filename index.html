@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cải tiến Thanh toán MoMo - Phong Vũ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Phong Vũ - Demo Cải Tiến Giao Diện Thanh Toán</h1>
+    </header>
+
+    <main class="container">
+        <!-- Danh sách sản phẩm mẫu -->
+        <section class="cart-summary">
+            <h2>Giỏ hàng của bạn (2 sản phẩm)</h2>
+            <div class="product-item">
+                <img src="[link removed]" alt="Laptop Demo">
+                <div class="product-info">
+                    <h3>Laptop Asus Vivobook 15</h3>
+                    <p class="price">14.990.000 đ</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="[link removed]" alt="Chuột Demo">
+                <div class="product-info">
+                    <h3>Chuột Không Dây Logitech M331</h3>
+                    <p class="price">390.000 đ</p>
+                </div>
+            </div>
+            <div class="total-price">
+                <span>Tổng tiền:</span>
+                <strong class="highlight">15.380.000 đ</strong>
+            </div>
+        </section>
+
+        <!-- Khu vực cải tiến: Tùy chọn Thanh toán MoMo -->
+        <section class="payment-section">
+            <h2>Chọn phương thức thanh toán</h2>
+            
+            <div class="payment-options">
+                <!-- Phương thức COD -->
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="cod">
+                    <span class="option-details">
+                        <strong>Thanh toán khi nhận hàng (COD)</strong>
+                        <small>Thanh toán bằng tiền mặt khi nhận hàng</small>
+                    </span>
+                </label>
+
+                <!-- Phương thức MoMo (Cải tiến chính) -->
+                <label class="payment-option featured-momo active">
+                    <input type="radio" name="payment_method" value="momo" checked>
+                    <span class="option-details">
+                        <span class="badge">Ưu đãi</span>
+                        <strong>Ví Điện Tử MoMo</strong>
+                        <small>Quét mã QR để thanh toán nhanh chóng & an toàn</small>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Khung chi tiết thanh toán MoMo -->
+            <div class="momo-details-box">
+                <div class="momo-header">
+                    <h3>Hướng dẫn thanh toán qua MoMo</h3>
+                </div>
+                <div class="momo-body">
+                    <div class="qr-code">
+                        <img src="[link removed]" alt="Mã QR MoMo Demo">
+                        <p>Quét mã bằng ứng dụng MoMo</p>
+                    </div>
+                    <ol class="instructions">
+                        <li>Mở ứng dụng <strong>MoMo</strong> trên điện thoại.</li>
+                        <li>Chọn <strong>"Quét Mã"</strong> và quét mã QR bên cạnh.</li>
+                        <li>Kiểm tra số tiền <strong>15.380.000 đ</strong> và xác nhận thanh toán.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <button class="btn-checkout">Xác nhận thanh toán</button>
+        </section>
+    </main>
+</body>
+</html>

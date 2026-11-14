@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #e31837; /* Màu đỏ thương hiệu Phong Vũ */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Giỏ hàng */
+.cart-summary, .payment-section {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #111;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.product-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.product-item img {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.price {
+    color: #e31837;
+    font-weight: bold;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ccc;
+}
+
+.highlight {
+    color: #e31837;
+}
+
+/* Phương thức thanh toán */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.payment-option:hover {
+    border-color: #a50064;
+}
+
+.featured-momo.active {
+    border-color: #a50064; /* Màu tím hồng đặc trưng của MoMo */
+    background-color: #fff5f9;
+}
+
+.badge {
+    background-color: #a50064;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.option-details strong {
+    display: block;
+}
+
+.option-details small {
+    color: #666;
+}
+
+/* Khung MoMo */
+.momo-details-box {
+    border: 1px solid #ffd1e8;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.momo-header h3 {
+    font-size: 1rem;
+    color: #a50064;
+    margin-bottom: 0.8rem;
+}
+
+.momo-body {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.qr-code {
+    text-align: center;
+}
+
+.qr-code img {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.qr-code p {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 4px;
+}
+
+.instructions {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.btn-checkout {
+    width: 100%;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-checkout:hover {
+    background-color: #c4122c;
+}
+
+/* Responsive cho màn hình điện thoại */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .momo-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instructions {
+        text-align: left;
+    }
+}
